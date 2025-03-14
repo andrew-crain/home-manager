@@ -59,7 +59,7 @@
         {
           name = "python";
           # language-servers = ["ruff" "pylsp"];
-          language-servers = [ "ruff" "pyright" ];
+          language-servers = [ "ruff" "pyright" "pylsp" ];
           auto-format = true;
         }
       ];

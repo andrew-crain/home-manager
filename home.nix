@@ -25,7 +25,7 @@
     pkgs.nixpkgs-fmt
     pkgs.pyright
     pkgs.python312
-    # pkgs.python312Packages.python-lsp-server
+    pkgs.python312Packages.python-lsp-server
     # pkgs.python312Packages.pylsp-mypy
     pkgs.ripgrep
     pkgs.ruff
