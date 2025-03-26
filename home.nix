@@ -13,6 +13,7 @@
   # Packages which will be installed in your environment.
   home.packages = [
     pkgs.bat
+    pkgs.docker
     pkgs.eza
     pkgs.flann
     pkgs.git
@@ -23,6 +24,7 @@
     pkgs.nil
     pkgs.nixd
     pkgs.nixpkgs-fmt
+    pkgs.postgresql
     pkgs.pyright
     pkgs.python312
     pkgs.python312Packages.python-lsp-server
@@ -30,6 +32,7 @@
     pkgs.ripgrep
     pkgs.ruff
     pkgs.rustup # Installs cargo, rustc, rust-analyzer, etc.
+    pkgs.tree
     pkgs.uv
 
     (pkgs.writeShellScriptBin "hm-test" ''
