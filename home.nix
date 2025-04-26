@@ -15,7 +15,9 @@
     pkgs.bat
     pkgs.docker
     pkgs.eza
+    pkgs.ffmpeg
     pkgs.flann
+    pkgs.fzf
     pkgs.git
     pkgs.helix
     pkgs.hello
@@ -24,16 +26,26 @@
     pkgs.nil
     pkgs.nixd
     pkgs.nixpkgs-fmt
+    pkgs.nodejs_23
+    pkgs.nodePackages.browser-sync
+    pkgs.pandoc_3_6
     pkgs.postgresql
+    pkgs.prettierd
     pkgs.pyright
-    pkgs.python312
+    (pkgs.python312.withPackages (ppkgs: [
+      # Used for a pandoc filter.
+      ppkgs.panflute
+    ]))
     pkgs.python312Packages.python-lsp-server
     # pkgs.python312Packages.pylsp-mypy
     pkgs.ripgrep
     pkgs.ruff
     pkgs.rustup # Installs cargo, rustc, rust-analyzer, etc.
     pkgs.tree
+    pkgs.typescript
+    pkgs.typescript-language-server
     pkgs.uv
+    pkgs.watchman
 
     (pkgs.writeShellScriptBin "hm-test" ''
       echo "${pkgs.python312}"

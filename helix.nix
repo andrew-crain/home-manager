@@ -62,6 +62,40 @@
           language-servers = [ "ruff" "pyright" "pylsp" ];
           auto-format = true;
         }
+
+        # Javascript/Typescript
+        {
+          name = "javascript";
+          formatter = {
+            command = "prettierd";
+            args = [ ".js" ];
+          };
+          auto-format = true;
+        }
+        {
+          name = "typescript";
+          formatter = {
+            command = "prettierd";
+            args = [ ".ts" ];
+          };
+          auto-format = true;
+        }
+        {
+          name = "jsx";
+          formatter = {
+            command = "prettierd";
+            args = [ ".jsx" ];
+          };
+          auto-format = true;
+        }
+        {
+          name = "tsx";
+          formatter = {
+            command = "prettierd";
+            args = [ ".tsx" ];
+          };
+          auto-format = true;
+        }
       ];
 
       language-server = {
